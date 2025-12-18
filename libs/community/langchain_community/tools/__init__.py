@@ -216,6 +216,10 @@ if TYPE_CHECKING:
     from langchain_community.tools.openweathermap.tool import (
         OpenWeatherMapQueryRun,
     )
+    from langchain_community.tools.praisonai import (
+        PraisonAIAgentTool,
+        PraisonAITool,
+    )
     from langchain_community.tools.playwright import (
         ClickTool,
         CurrentWebPageTool,
@@ -450,6 +454,8 @@ __all__ = [
     "PolygonFinancials",
     "PolygonLastQuote",
     "PolygonTickerNews",
+    "PraisonAIAgentTool",
+    "PraisonAITool",
     "PubmedQueryRun",
     "QueryCheckerTool",
     "QueryPowerBITool",
@@ -604,6 +610,8 @@ _module_lookup = {
     "PolygonFinancials": "langchain_community.tools.polygon.financials",
     "PolygonLastQuote": "langchain_community.tools.polygon.last_quote",
     "PolygonTickerNews": "langchain_community.tools.polygon.ticker_news",
+    "PraisonAIAgentTool": "langchain_community.tools.praisonai",
+    "PraisonAITool": "langchain_community.tools.praisonai",
     "PubmedQueryRun": "langchain_community.tools.pubmed.tool",
     "QueryCheckerTool": "langchain_community.tools.spark_sql.tool",
     "QueryPowerBITool": "langchain_community.tools.powerbi.tool",
